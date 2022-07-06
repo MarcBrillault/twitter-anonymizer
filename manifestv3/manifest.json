@@ -1,7 +1,7 @@
 {
     "name": "Twitter Anonymizer",
     "description": "One-click anonymizer of tweets before sharing a screenshot.",
-    "version": "1.0",
+    "version": "1.0.1",
     "manifest_version": 3,
     "background": {
         "service_worker": "background.js"
