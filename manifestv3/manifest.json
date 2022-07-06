@@ -1,6 +1,6 @@
 {
     "name": "Twitter Anonymizer",
-    "description": "Anonymize tweets in a single click before screening them",
+    "description": "One-click anonymizer of tweets before sharing a screenshot.",
     "version": "1.0",
     "manifest_version": 3,
     "background": {
