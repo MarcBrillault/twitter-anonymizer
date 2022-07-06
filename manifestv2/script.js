@@ -1,32 +1,22 @@
 let active = false
 
-let selectors = [
-    {
-        'selector': '[data-testid="tweet"] [data-testid="User-Names"]',
-        'rounded': false,
-    },
-    {
-        'selector': '[data-testid^=UserAvatar]',
-        'rounded': true
-    },
-    {
-        'selector': '[data-testid="tweet"] a span',   // a broad selector, needed for "in response to XXX" links
-        'rounded': false
-    }
-]
-
 function triggerMasks(toggle = true) {
     if (toggle) {
         active = !active
     }
 
-    for (i = 0; i < selectors.length; i++) {
-        elements = document.querySelectorAll(selectors[i].selector)
-        for (j = 0; j < elements.length; j++) {
-            elements[j].classList.toggle('twitter-anonymizer-anonymized', active);
-            if (selectors[i].rounded === true) {
-                elements[j].classList.toggle('twitter-anonymizer-anonymized-image', active);
-            }
+    body = document.getElementsByTagName('body')
+    body[0].classList.toggle('twitter-anonymizer', active)
+    toggleAtTexts(active)
+
+}
+
+function toggleAtTexts(active = true) {
+    elements = document.getElementsByTagName('span')
+    for (i = 0; i < elements.length; i++) {
+        text = elements[i].innerText
+        if (text.substring(0, 1) === '@') {
+            elements[i].classList.toggle('twitter-anonymizer-anonymized', active)
         }
     }
 }
