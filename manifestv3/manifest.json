@@ -1,0 +1,32 @@
+{
+    "name": "Twitter Anonymizer",
+    "description": "Anonymize tweets in a single click before screening them",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "run_at": "document_idle",
+            "all_frames": true,
+            "matches": [
+                "https://twitter.com/*"
+            ],
+            "css": [
+                "styles.css"
+            ],
+            "js": [
+                "script.js"
+            ]
+        }
+    ],
+    "icons": {
+        "128": "icon.png"
+    },
+    "permissions": [
+        "activeTab",
+        "contextMenus",
+        "scripting"
+    ]
+}
