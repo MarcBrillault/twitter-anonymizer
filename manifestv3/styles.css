@@ -1,3 +1,7 @@
+/*
+    All texts & background colors inside these selectors will be hidden
+    ie they will have black text color on black background
+*/
 body.twitter-anonymizer [data-testid="User-Names"],
 body.twitter-anonymizer [data-testid^=UserAvatar],
 body.twitter-anonymizer [data-testid^=UserAvatar]+div,
@@ -11,10 +15,7 @@ body.twitter-anonymizer [data-testid="UserUrl"],
     color: black !important;
 }
 
-body.twitter-anonymizer [data-testid^=UserAvatar] {
-    border-radius: 9999px;
-}
-
+/* Child elements of previous filters texts are black too */
 body.twitter-anonymizer [data-testid="User-Names"] *,
 body.twitter-anonymizer [data-testid^=UserAvatar] *,
 body.twitter-anonymizer [data-testid^=UserAvatar]+div *,
@@ -26,6 +27,12 @@ body.twitter-anonymizer [data-testid="UserUrl"] * {
     color: black !important;
 }
 
+/* Rounded images */
+body.twitter-anonymizer [data-testid^=UserAvatar] {
+    border-radius: 9999px;
+}
+
+/* hidden images */
 body.twitter-anonymizer [data-testid^=UserAvatar] *,
 body.twitter-anonymizer [href^='/'] [src$='.svg'],
 body.twitter-anonymizer [data-testid^=UserAvatar]+div [src$='.svg'],
