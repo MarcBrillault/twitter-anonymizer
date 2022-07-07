@@ -1,29 +1,38 @@
-body.twitter-anonymizer [data-testid="User-Names"],
-body.twitter-anonymizer [data-testid^=UserAvatar],
-body.twitter-anonymizer [data-testid^=UserAvatar]+div,
-body.twitter-anonymizer [data-testid^=UserAvatar]+div+div,
-body.twitter-anonymizer [href^='/'],
-body.twitter-anonymizer [data-testid="SideNav_AccountSwitcher_Button"],
-body.twitter-anonymizer [data-testid="UserCell"],
+/*
+    All texts & background colors inside these selectors will be hidden
+    ie they will have black text color on black background
+*/
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="User-Names"],
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid^=UserAvatar],
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid^=UserAvatar]+div,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[href^='/'],
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="SideNav_AccountSwitcher_Button"],
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserCell"],
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserName"],
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserUrl"],
 .twitter-anonymizer-anonymized {
-    background-color: black !important;
-    color: black !important;
+    background-color: black;
+    color: black;
 }
 
+/* Child elements of previous filters texts are black too */
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="User-Names"] *,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid^=UserAvatar] *,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid^=UserAvatar]+div *,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[href^='/'] *,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="SideNav_AccountSwitcher_Button"] *,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserCell"] *,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserName"] *,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserUrl"] * {
+    color: black;
+}
+
+/* Rounded images */
 body.twitter-anonymizer [data-testid^=UserAvatar] {
     border-radius: 9999px;
 }
 
-body.twitter-anonymizer [data-testid="User-Names"] *,
-body.twitter-anonymizer [data-testid^=UserAvatar] *,
-body.twitter-anonymizer [data-testid^=UserAvatar]+div *,
-body.twitter-anonymizer [data-testid^=UserAvatar]+div+div *,
-body.twitter-anonymizer [href^='/'] *,
-body.twitter-anonymizer [data-testid="SideNav_AccountSwitcher_Button"] *,
-body.twitter-anonymizer [data-testid="UserCell"] * {
-    color: black !important;
-}
-
+/* hidden images */
 body.twitter-anonymizer [data-testid^=UserAvatar] *,
 body.twitter-anonymizer [href^='/'] [src$='.svg'],
 body.twitter-anonymizer [data-testid^=UserAvatar]+div [src$='.svg'],
