@@ -1,7 +1,6 @@
 body.twitter-anonymizer [data-testid="User-Names"],
 body.twitter-anonymizer [data-testid^=UserAvatar],
 body.twitter-anonymizer [data-testid^=UserAvatar]+div,
-body.twitter-anonymizer [data-testid^=UserAvatar]+div+div,
 body.twitter-anonymizer [href^='/'],
 body.twitter-anonymizer [data-testid="SideNav_AccountSwitcher_Button"],
 body.twitter-anonymizer [data-testid="UserCell"],
@@ -17,7 +16,6 @@ body.twitter-anonymizer [data-testid^=UserAvatar] {
 body.twitter-anonymizer [data-testid="User-Names"] *,
 body.twitter-anonymizer [data-testid^=UserAvatar] *,
 body.twitter-anonymizer [data-testid^=UserAvatar]+div *,
-body.twitter-anonymizer [data-testid^=UserAvatar]+div+div *,
 body.twitter-anonymizer [href^='/'] *,
 body.twitter-anonymizer [data-testid="SideNav_AccountSwitcher_Button"] *,
 body.twitter-anonymizer [data-testid="UserCell"] * {
