@@ -27,9 +27,35 @@ As Firefox still uses `manifest v2`, there will be two directories in the reposi
 
 As soon as Firefox allow `manifest v3` extensions  ([It should be at the end of 2022](https://blog.mozilla.org/addons/2022/05/18/manifest-v3-in-firefox-recap-next-steps/)), I'll go back to managing just one version.
 
-# changelog
+# Changelog
 
-v 1.0.0
+## v1.0.2
+
+### Bugfixes:
+
+- Mask UserName and UserLink on user homepage
+- Do not mask the menu icons
+
+### Refactorization:
+
+- Removed useless CSS selectors
+- Added comments and moved elements in CSS code
+
+## v1.0.1
+
+### Bugfixes
+
+- Quoted tweet usernames are not masked
+- Names are not anonymized in the notifications
+- "Personnes pertinentes" names are not masked
+- Anonymize url chunks
+
+### Refactorization
+- Simplify selectors
+
+## v1.0.0
+
+### New functionalities
 
 - one click to hide/display tweeter user's names and avatars
 - the anonymization will be done on tweets that are loaded after the click
