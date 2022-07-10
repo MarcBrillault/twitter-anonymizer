@@ -27,7 +27,28 @@ As Firefox still uses `manifest v2`, there will be two directories in the reposi
 
 As soon as Firefox allow `manifest v3` extensions  ([It should be at the end of 2022](https://blog.mozilla.org/addons/2022/05/18/manifest-v3-in-firefox-recap-next-steps/)), I'll go back to managing just one version.
 
+# Where can I install the plugin ?
+
+- [Install plugin on Chrome](https://chrome.google.com/webstore/detail/twitter-anonymizer/dliaabmcomhfhpibgbljmcjfgfkjbalf)
+- [Install plugin on Firefox](https://addons.mozilla.org/fr/firefox/addon/twitter-anonymizer/)
+- Install on Opera: Coming soon
+
 # Changelog
+
+## v1.1.0
+
+### New functionalities
+
+- Mask the page's URL 
+
+### Bugfixes
+
+- Links & images in "Personnes pertinentes" are now hidden 
+
+### Repository improvements
+
+- Added 64 and 32px icons (Should affect the plugin pages on Firefox and Opera)
+- Added links to download the plugin on the `README.md` file
 
 ## v1.0.2
 

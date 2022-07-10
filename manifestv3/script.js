@@ -1,4 +1,6 @@
 let active = false
+let currentState = ''
+let hiddenState = ''
 
 function triggerMasks(toggle = true) {
     if (toggle) {
@@ -8,6 +10,7 @@ function triggerMasks(toggle = true) {
     body = document.getElementsByTagName('body')
     body[0].classList.toggle('twitter-anonymizer', active)
     toggleAtTexts(active)
+    toggleState()
 
 }
 
@@ -21,6 +24,23 @@ function toggleAtTexts(active = true) {
     }
 }
 
+function toggleState() {
+    if (active === true) {
+        state = window.location.href
+        if (hiddenState != state) {
+            currentState = state
+        }
+        if (state != hiddenState) {
+            window.history.pushState({ page: "" }, " page", "/anonymizer_user");
+            hiddenState = window.location.href
+        }
+    } else {
+        if (currentState !== '') {
+            window.history.pushState({ page: "" }, "", currentState)
+        }
+        currentState = ''
+    }
+}
 
 let observer = new MutationObserver(mutations => {
     triggerMasks(false)
