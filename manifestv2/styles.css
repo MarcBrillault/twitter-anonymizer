@@ -10,9 +10,10 @@ body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="SideNav_
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserCell"],
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserName"],
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserUrl"],
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="sidebarColumn"] a,
 .twitter-anonymizer-anonymized {
     background-color: black;
-    color: black;
+    color: black !important;
 }
 
 /* Child elements of previous filters texts are black too */
@@ -23,8 +24,9 @@ body.twitter-anonymizer :not(nav[aria-label="Principal"])>[href^='/'] *,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="SideNav_AccountSwitcher_Button"] *,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserCell"] *,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserName"] *,
-body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserUrl"] * {
-    color: black;
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserUrl"] *,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="sidebarColumn"] a * {
+    color: black !important;
 }
 
 /* Rounded images */
@@ -36,6 +38,7 @@ body.twitter-anonymizer [data-testid^=UserAvatar] {
 body.twitter-anonymizer [data-testid^=UserAvatar] *,
 body.twitter-anonymizer [href^='/'] [src$='.svg'],
 body.twitter-anonymizer [data-testid^=UserAvatar]+div [src$='.svg'],
-body.twitter-anonymizer [data-testid="SideNav_AccountSwitcher_Button"] [src$='.svg'] {
+body.twitter-anonymizer [data-testid="SideNav_AccountSwitcher_Button"] [src$='.svg'],
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="sidebarColumn"] img {
     visibility: hidden;
 }
