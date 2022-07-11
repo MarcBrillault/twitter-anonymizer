@@ -31,7 +31,7 @@ As soon as Firefox allow `manifest v3` extensions  ([It should be at the end of 
 
 - [Install plugin on Chrome](https://chrome.google.com/webstore/detail/twitter-anonymizer/dliaabmcomhfhpibgbljmcjfgfkjbalf)
 - [Install plugin on Firefox](https://addons.mozilla.org/fr/firefox/addon/twitter-anonymizer/)
-- Install on Opera: Coming soon
+- [Install plugin on Opera](https://addons.opera.com/fr/extensions/details/twitter-anonymizer/)
 
 # Changelog
 
