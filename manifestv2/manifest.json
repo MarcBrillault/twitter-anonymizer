@@ -1,7 +1,7 @@
 {
     "name": "Twitter Anonymizer",
     "description": "One-click anonymizer of tweets before sharing a screenshot.",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "manifest_version": 2,
     "background": {
         "persistent": false,
@@ -14,7 +14,8 @@
             "all_frames": true,
             "matches": [
                 "https://twitter.com/*",
-                "https://mobile.twitter.com/*"
+                "https://mobile.twitter.com/*",
+                "https://tweetdeck.twitter.com/*"
             ],
             "css": [
                 "styles.css"
