@@ -15,6 +15,11 @@ body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserCell
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserName"],
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserUrl"],
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="sidebarColumn"] a,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>h2#detail-header,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"],
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"]+div,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"]+div+div,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="conversation"],
 .twitter-anonymizer-anonymized {
     background-color: black;
     color: black !important;
@@ -29,7 +34,13 @@ body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="SideNav_
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserCell"] *,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserName"] *,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserUrl"] *,
-body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="sidebarColumn"] a * {
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="sidebarColumn"] a *,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"] *,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"]+div *,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"]+div+div *,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="conversation"] *,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>h2#detail-header * {
+    background-color: black;
     color: black !important;
 }
 
@@ -43,13 +54,16 @@ body.twitter-anonymizer [data-testid^=UserAvatar] *,
 body.twitter-anonymizer [href^='/'] [src$='.svg'],
 body.twitter-anonymizer [data-testid^=UserAvatar]+div [src$='.svg'],
 body.twitter-anonymizer [data-testid="SideNav_AccountSwitcher_Button"] [src$='.svg'],
-body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="sidebarColumn"] img {
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="sidebarColumn"] img,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>h2#detail-header img,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"] img,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="conversation"] * {
     visibility: hidden;
 }
 
 /*
- * Tweetdeck specific styles
- */
+   * Tweetdeck specific styles
+   */
 body.twitter-anonymizer span.fullname,
 body.twitter-anonymizer a.account-link,
 body.twitter-anonymizer a.other-replies-link,
