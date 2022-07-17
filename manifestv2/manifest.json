@@ -13,7 +13,8 @@
         {
             "all_frames": true,
             "matches": [
-                "https://twitter.com/*"
+                "https://twitter.com/*",
+                "https://mobile.twitter.com/*"
             ],
             "css": [
                 "styles.css"
