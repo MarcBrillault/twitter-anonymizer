@@ -15,7 +15,7 @@ body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserCell
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserName"],
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserUrl"],
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="sidebarColumn"] a,
-body.twitter-anonymizer :not(nav[aria-label="Principal"])>h2#detail-header,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>h2,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"],
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"]+div,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"]+div+div,
@@ -41,7 +41,7 @@ body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDesc
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"]+div+div *,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="conversation"] *,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="thumbnail"] *,
-body.twitter-anonymizer :not(nav[aria-label="Principal"])>h2#detail-header * {
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>h2 * {
     background-color: #404040;
     color: #404040 !important;
 }
@@ -57,15 +57,15 @@ body.twitter-anonymizer [href^='/'] [src$='.svg'],
 body.twitter-anonymizer [data-testid^=UserAvatar]+div [src$='.svg'],
 body.twitter-anonymizer [data-testid="SideNav_AccountSwitcher_Button"] [src$='.svg'],
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="sidebarColumn"] img,
-body.twitter-anonymizer :not(nav[aria-label="Principal"])>h2#detail-header img,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>h2 img,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"] img,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="conversation"] * {
     visibility: hidden;
 }
 
 /*
-    * Tweetdeck specific styles
-    */
+      * Tweetdeck specific styles
+      */
 body.twitter-anonymizer span.fullname,
 body.twitter-anonymizer a.account-link,
 body.twitter-anonymizer a.other-replies-link,
