@@ -19,10 +19,10 @@ body.twitter-anonymizer :not(nav[aria-label="Principal"])>h2#detail-header,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"],
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"]+div,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"]+div+div,
-body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="conversation"],
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="conversation"]:first-child,
 .twitter-anonymizer-anonymized {
-    background-color: black;
-    color: black !important;
+    background-color: #404040;
+    color: #404040 !important;
 }
 
 /* Child elements of previous filters texts are black too */
@@ -40,8 +40,8 @@ body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDesc
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"]+div+div *,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="conversation"] *,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>h2#detail-header * {
-    background-color: black;
-    color: black !important;
+    background-color: #404040;
+    color: #404040 !important;
 }
 
 /* Rounded images */
@@ -70,8 +70,8 @@ body.twitter-anonymizer a.other-replies-link,
 body.twitter-anonymizer span.link-complex-target,
 body.twitter-anonymizer p.account-bio,
 body.twitter-anonymizer p.account-bio a {
-    background-color: black;
-    color: black !important;
+    background-color: #404040;
+    color: #404040 !important;
 }
 
 body.twitter-anonymizer img.avatar,
