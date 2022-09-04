@@ -59,6 +59,7 @@ body.twitter-anonymizer [data-testid="SideNav_AccountSwitcher_Button"] [src$='.s
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="sidebarColumn"] img,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>h2 img,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"] img,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserName"] img,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="conversation"] * {
     visibility: hidden;
 }
