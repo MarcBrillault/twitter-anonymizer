@@ -19,7 +19,8 @@ body.twitter-anonymizer :not(nav[aria-label="Principal"])>h2#detail-header,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"],
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"]+div,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"]+div+div,
-body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="conversation"]:first-child,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="conversation"],
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="thumbnail"],
 .twitter-anonymizer-anonymized {
     background-color: #404040;
     color: #404040 !important;
@@ -39,6 +40,7 @@ body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDesc
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"]+div *,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="UserDescription"]+div+div *,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="conversation"] *,
+body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="thumbnail"] *,
 body.twitter-anonymizer :not(nav[aria-label="Principal"])>h2#detail-header * {
     background-color: #404040;
     color: #404040 !important;
@@ -62,8 +64,8 @@ body.twitter-anonymizer :not(nav[aria-label="Principal"])>[data-testid="conversa
 }
 
 /*
-   * Tweetdeck specific styles
-   */
+     * Tweetdeck specific styles
+     */
 body.twitter-anonymizer span.fullname,
 body.twitter-anonymizer a.account-link,
 body.twitter-anonymizer a.other-replies-link,
