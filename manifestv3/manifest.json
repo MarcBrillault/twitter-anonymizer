@@ -29,7 +29,6 @@
         "32": "icon-32.png"
     },
     "permissions": [
-        "activeTab",
         "contextMenus",
         "scripting"
     ]
